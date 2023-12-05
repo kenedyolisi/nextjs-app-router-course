@@ -2,9 +2,6 @@
   "name": "nextjs-app-router-course",
   "private": true,
   "license": "MIT",
-  "engines": {
-    "node": ">=18.17.0"
-  },
   "author": {
     "name": "Kenedy Olisi"
   },
@@ -13,6 +10,7 @@
     "dev": "next dev",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
+    "seed": "node -r dotenv/config ./scripts/seed.js",
     "start": "next start"
   },
   "dependencies": {
@@ -42,5 +40,8 @@
     "eslint-config-prettier": "9.0.0",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "0.5.4"
+  },
+  "engines": {
+    "node": ">=18.17.0"
   }
 }
