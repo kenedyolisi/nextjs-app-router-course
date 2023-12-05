@@ -2,7 +2,7 @@ import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { lusitana } from '@/app/ui/fonts';
-
+import Image from 'next/image';
 import styles from '@/app/ui/home.module.css';
 
 export default function Page() {
@@ -32,6 +32,13 @@ export default function Page() {
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
+          <Image
+            className="hidden md:block"
+            src="/hero-desktop.png"
+            alt="hero desktop"
+            width={1000}
+            height={760}
+          />
         </div>
       </div>
     </main>
